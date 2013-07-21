@@ -13,7 +13,7 @@ fs.readFile('index.html',function(err,data) {
 });
 
 app.get('/', function(request, response) {
-  response.send(text_from_index);
+  response.send("" + text_from_index + "");
 });
 
 var port = process.env.PORT || 5000;
